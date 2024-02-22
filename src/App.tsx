@@ -25,7 +25,7 @@ function App() {
 
   return (
     <div className="p-12">
-      <div className="mb-4 flex items-center justify-between">
+      <div className="mb-4 flex flex-col items-center justify-between sm:flex-row space-y-4 sm:space-y-0">
         <SearchBar onChange={handleSearchOnChange} />
         <SortBy
           options={sortByOptions}

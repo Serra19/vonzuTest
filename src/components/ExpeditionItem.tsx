@@ -30,7 +30,7 @@ function ExpeditionItem({ expedition }: Props) {
   return (
     <div
       data-testid="expeditionItem"
-      className="relative grid grid-cols-3 items-center justify-between gap-x-6 px-4 py-5 text-sm hover:bg-gray-50 sm:px-6"
+      className="relative grid grid-rows-3 items-center justify-between gap-x-6 px-4 py-5 text-sm hover:bg-gray-50 sm:px-6 sm:grid-cols-3 sm:grid-rows-1"
     >
       <div>
         <div className="flex gap-x-2 items-center">
