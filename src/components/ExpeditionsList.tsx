@@ -26,7 +26,9 @@ export const ExpeditionsList = ({
   }, [])
 
   return (
-    <div className="divide-y divide-gray-100 overflow-hidden bg-white shadow-sm ring-1 ring-gray-900/5 sm:rounded-xl">
+    <div
+      className="divide-y divide-gray-100 overflow-hidden bg-white shadow-sm ring-1 ring-gray-900/5 sm:rounded-xl"
+    >
       {expeditions
         ?.filter((expedition) => {
           return (
@@ -44,8 +46,7 @@ export const ExpeditionsList = ({
           } else if (a[sortBy] < b[sortBy]) {
             if (sortOrder === "asc") {
               return -1
-            }
-            else {
+            } else {
               return 1
             }
           } else {

@@ -15,6 +15,7 @@ export function SearchBar({
         />
       </div>
       <input
+        data-testid="searchInput"
         type="text"
         name="search"
         id="search"

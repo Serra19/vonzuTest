@@ -28,7 +28,8 @@ function ExpeditionItem({ expedition }: Props) {
   }
 
   return (
-    <div
+    <li
+      data-testid={`expedition-item-${expedition.id}`}
       className="relative grid grid-rows-3 items-center justify-between gap-x-6 px-4 py-5 text-sm hover:bg-gray-50 sm:px-6 sm:grid-cols-3 sm:grid-rows-1"
     >
       <div>
@@ -100,7 +101,7 @@ function ExpeditionItem({ expedition }: Props) {
           </p>
         </div>
       </div>
-    </div>
+    </li>
   )
 }
 
